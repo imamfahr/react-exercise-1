@@ -1,3 +1,91 @@
-.list-food-container{
-    background-color: blueviolet;
+.list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.list-food-container {
+  border: grey 0.5px solid;
+
+  text-align: left;
+  width: 20%;
+  height: 30%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Abel", sans-serif;
+
+  -webkit-box-shadow: 10px 10px 8px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 8px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 8px -10px rgba(0, 0, 0, 0.75);
+}
+
+.food-name {
+  font-size: 40px;
+  /* background-color: yellow; */
+}
+
+.price {
+  font-size: 30px;
+  /* background-color: blue; */
+}
+
+.food-img {
+  height: 230px;
+  width: 100%;
+}
+
+.container-counter {
+    background-color: grey;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
+    width: 300px;
+    height: 300px;
+    -webkit-box-shadow: 10px 10px 8px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 8px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 8px -10px rgba(0, 0, 0, 0.75);
+    font-family: "Abel", sans-serif;
+    
+}
+
+.counter-component-container{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+}
+
+
+.num{
+    font-size: 150px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    color: honeydew;
+}
+
+.title{
+    font-size: 20px;
+
+}
+
+.divider{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color: honeydew;
+    font-size: 25px;
+    color:grey;
 }

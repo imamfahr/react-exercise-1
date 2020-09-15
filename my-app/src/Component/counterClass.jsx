@@ -27,11 +27,13 @@ export default class CounterClass extends Component{
 
     render(){    
         return (
-            <div className = 'container-counter-func'>
-            <h1>Counter with class</h1>
-                <h1>{this.state.countNum}</h1>
-                <button onClick={this.increment}>+</button>
-                <button onClick={this.decrement}>-</button>
+            <div className ='container-counter'>
+                <h1 className='num'>{this.state.countNum}</h1>
+                <div className='divider'>
+                <button onClick={this.decrement} className='button'>-</button>
+                <button onClick={this.increment} className='button'>+</button>
+                </div>
+            <p className = 'title'>Counter with Class</p>
             </div>
         );
     }

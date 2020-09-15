@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 
+console.log('asdasd')
+
 function CounterFunc (){
     let [num, setNum] = useState(0);
 
@@ -17,11 +19,13 @@ function CounterFunc (){
     }
     
     return (
-        <div className = 'container-counter-func'>
-        <h1>counter with function</h1>
-            <h1>{num}</h1>
-            <button onClick={increment}>+</button>
-            <button onClick={decrement}>-</button>
+        <div className = 'container-counter'>
+            <h1 className='num'>{num}</h1>
+            <div className='divider'>
+            <button onClick={decrement} className='button'>-</button>
+            <button onClick={increment} className='button'>+</button>
+            </div>
+            <p className = 'title'>Counter with Function</p>
         </div>
     );
 }
